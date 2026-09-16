@@ -1,0 +1,35 @@
+TASK 24: THREADING vs MULTIPROCESSING vs ASYNCIO
+================================================
+
+Number of Tasks: 10
+
+Execution Time Comparison
+-------------------------
+
+Threading (I/O-bound):
+0.5087 seconds
+
+AsyncIO (I/O-bound):
+0.5102 seconds
+
+Multiprocessing (CPU-bound):
+1.1227 seconds
+
+
+Analysis
+--------
+
+Threading and AsyncIO completed the simulated I/O-bound workload
+in approximately the same time.
+
+Threading is useful for I/O-bound operations such as file handling,
+network requests, and API calls.
+
+AsyncIO is useful for handling many asynchronous I/O operations,
+especially in network applications and web servers.
+
+Multiprocessing is designed for CPU-bound workloads and uses
+multiple processes to perform computational work in parallel.
+
+The measured execution time may vary between runs depending on
+system resources and background processes.
